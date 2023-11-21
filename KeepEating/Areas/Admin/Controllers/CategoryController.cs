@@ -1,4 +1,5 @@
 ﻿using KeepEating.Data;
+<<<<<<< HEAD
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,6 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using KeepEating.Models;
+=======
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
 
 namespace KeepEating.Areas.Admin.Controllers
 {
@@ -18,8 +24,12 @@ namespace KeepEating.Areas.Admin.Controllers
         {
             _db = db;
         }
+<<<<<<< HEAD
 
         //Get
+=======
+        //GET
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
         public async Task<IActionResult> Index()
         {
             return View(await _db.Category.ToListAsync());
@@ -29,6 +39,7 @@ namespace KeepEating.Areas.Admin.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
 
         //Post create
         [HttpPost]
@@ -125,5 +136,7 @@ namespace KeepEating.Areas.Admin.Controllers
         }
 
 
+=======
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
     }
 }

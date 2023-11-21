@@ -32,7 +32,11 @@ namespace KeepEating
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+<<<<<<< HEAD
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
+=======
+            services.AddControllersWithViews();
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 

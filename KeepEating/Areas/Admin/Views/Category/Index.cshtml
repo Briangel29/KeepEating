@@ -4,8 +4,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<<<<<<< HEAD
 <br />
 <br />
+=======
+<br /><br />
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
 <div class="border backgroundWhite">
     <div class="row">
         <div class="col-6">
@@ -17,6 +21,7 @@
     </div>
     <br />
     <div>
+<<<<<<< HEAD
         @if (Model.Count() > 0)
         {
 
@@ -36,6 +41,30 @@
                         <partial name="_TableButtonPartial" model="item.Id"></partial>
                     </tr>
                 }
+=======
+        @if(Model.Count() > 0)
+        {
+            
+        
+            <table class="table table-striped border">
+            <tr class="table-secondary">
+                <th>
+                    @Html.DisplayNameFor(m=>m.Name)
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(m=>item.Name)</td>
+                </tr>
+                <tr>
+                    EDIT | DELETE | DETAILS
+                </tr>
+            }
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
             </table>
         }
         else

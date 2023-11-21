@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using KeepEating.Data;
 using KeepEating.Models;
 using KeepEating.Models.ViewModels;
@@ -5,12 +6,19 @@ using KeepEating.Utility;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+=======
+﻿using KeepEating.Models;
+using Microsoft.AspNetCore.Mvc;
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+<<<<<<< HEAD
 using System.Security.Claims;
+=======
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
 using System.Threading.Tasks;
 
 namespace KeepEating.Controllers
@@ -18,6 +26,7 @@ namespace KeepEating.Controllers
     [Area("Customer")]
     public class HomeController : Controller
     {
+<<<<<<< HEAD
 
         private readonly ApplicationDbContext _db;
 
@@ -47,6 +56,18 @@ namespace KeepEating.Controllers
 
 
             return View(IndexVM);
+=======
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+>>>>>>> c3c46588479ba917fe066dd902d6370d0ae73074
         }
 
         public IActionResult Privacy()
